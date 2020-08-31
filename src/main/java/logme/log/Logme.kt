@@ -278,8 +278,13 @@ class Logme private constructor() {
                 "logs"
         ).build()
 
+        companion object {
+            @JvmStatic lateinit var instance: DatabaseTree
+        }
+
         init {
             JodaTimeAndroid.init(context)
+            instance = this
         }
 
         fun getDatabase(): LogsDatabase {
