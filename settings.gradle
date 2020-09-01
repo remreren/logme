@@ -1,0 +1,3 @@
+include ':logme-sample'
+include ':logme'
+rootProject.name = "Logme Project"
